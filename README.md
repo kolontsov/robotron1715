@@ -1,6 +1,6 @@
 ## robotron1715-font
 
-This utility takes [Robotron 1715](https://en.wikipedia.org/wiki/PC_1715) character ROM and saves font to [BDF format](https://en.wikipedia.org/wiki/Glyph_Bitmap_Distribution_Format), which can be used in Unix or converted to other format (for example, [PSF](https://en.wikipedia.org/wiki/PC_Screen_Font)). It serves no purpose except historical interest.
+This utility takes [Robotron 1715](https://en.wikipedia.org/wiki/PC_1715) ([ru](https://ru.wikipedia.org/wiki/Robotron_1715)) character ROM and saves font to [BDF format](https://en.wikipedia.org/wiki/Glyph_Bitmap_Distribution_Format), which can be used in Unix or converted to other format (for example, [PSF](https://en.wikipedia.org/wiki/PC_Screen_Font)). It serves no purpose except historical interest.
 
 Currently, only Latin ROM (see `s619.bin` below) is included in bdf.
 
