@@ -74,7 +74,7 @@ class BDF8x16:
         self.glyphs[code] = data
 
     def write(self):
-        with open(self.outfile, "w") as f:
+        with open(self.outfile, 'w') as f:
             f.write(self.get_font())
 
 class RB1715Font:
@@ -116,14 +116,14 @@ class FontPreview:
 
     def write(self):
         w = png.Writer(width=self.width, height=self.height, greyscale=True)
-        with open(self.outfile, "wb") as f:
+        with open(self.outfile, 'wb') as f:
             w.write(f, self.image)
 
 def main():
     print('Loading character ROM')
-    rb1715 = RB1715Font(rom="s619.bin")
-    bdf = BDF8x16(name="Robotron1715", outfile="robotron1715.bdf")
-    preview = FontPreview(outfile="robotron1715.png", scale=2)
+    rb1715 = RB1715Font(rom='s619.bin')
+    bdf = BDF8x16(name='Robotron1715', outfile='robotron1715.bdf')
+    preview = FontPreview(outfile='robotron1715.png', scale=2)
     
     for code in range(128):
         data = rb1715.get_data(code)
